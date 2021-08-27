@@ -97,6 +97,21 @@ function winLose(user, js){
 // javascriptを学ぼう4章
 // -------------------
 
-$(document).ready(function () {
-  $('body').html('<h1>Hello jQuery!!</h1>');
+// $(document).ready(function () {
+//   $('body').html('<h1>Hello jQuery!!</h1>');
+// });
+
+
+// -------------------
+// javascriptを学ぼう5章
+// -------------------
+
+$(function (){
+  $('.box1').slideDown(3000, function (){
+    $('.box1').css({
+      'background-color': '#0000FF',
+      'width': '200px',
+      'height': '100px'
+    }).slideUp(5000);
+  });
 });
