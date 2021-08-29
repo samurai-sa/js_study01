@@ -106,12 +106,25 @@ function winLose(user, js){
 // javascriptを学ぼう5章
 // -------------------
 
-$(function (){
-  $('.box1').slideDown(3000, function (){
-    $('.box1').css({
-      'background-color': '#0000FF',
-      'width': '200px',
-      'height': '100px'
-    }).slideUp(5000);
+// $(function (){
+//   $('.box1').slideDown(3000, function (){
+//     $('.box1').css({
+//       'background-color': '#0000FF',
+//       'width': '200px',
+//       'height': '100px'
+//     }).slideUp(5000);
+//   });
+// });
+
+// -------------------
+// javascriptを学ぼう6章
+// -------------------
+
+$(function(){
+  $('.box1').on('click', function(){
+    $('.box1').addClass('box1-ext');
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box1-ext');
   });
 });
